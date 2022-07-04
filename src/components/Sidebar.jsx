@@ -49,7 +49,7 @@ function Sidebar () {
                     <a href="https://www.instagram.com/heartdevs/" target="_blank"><InstagramLogo color="white" weight="regular" size={20} className={`mr-3 ${!open && 'scale-0 duration-100'}`} /></a>
                     <a href="https://discord.gg/he4rt" target="_blank"><DiscordLogo color="white" weight="regular" size={20} className={`mr-3 ${!open && 'scale-0 duration-100'}`}/></a>
                     <a href="https://twitter.com/He4rtDevs" target="_blank"><TwitterLogo color="white" weight="regular" size={20} className={`mr-3 ${!open && 'scale-0 duration-100'}`} /></a>
-                    <a href="https://heartdevs.com" target="_blank"><Globe color="white" weight="regular" size={20} className={`${!open && 'scale-0 duration-100'}`} /></a>
+                    <a href="https://heartdevs.com/" target="_blank"><Globe color="white" weight="regular" size={20} className={`${!open && 'scale-0 duration-100'}`} /></a>
                 </div>
                 <div className="flex items-center justify-center pt-8">
                     {theme === "light" ? <Sun color="white" weight="bold" size={20} className="cursor-pointer" onClick={()=>setTheme("dark")}/> : <Moon color="white" weight="bold" size={20} className="cursor-pointer" onClick={()=>setTheme("light")}/>}
