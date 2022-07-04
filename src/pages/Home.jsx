@@ -1,12 +1,16 @@
 import LogoLight from '../public/assets/4noobs-logo-light.svg'
+import LogoDark from '../public/assets/4noobs-logo-dark.svg'
+import { useTheme } from '../hooks/useTheme';
 
 
 function Home () {
+    const { theme } = useTheme();  
 
     return (
         <div className='p-10'>
             <div className={`flex justify-center`}>
-                <img src={LogoLight} alt="" className='w-100 h-40'/>
+                {theme === 'light' ? <img src={LogoLight} alt="" className='w-100 h-40'/> 
+                : <img src={LogoDark} alt="" className='w-100 h-40'/>}
             </div>
 
             <div>
