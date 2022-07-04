@@ -1,9 +1,13 @@
+import Sidebar from "./components/Sidebar"
+import Home from "./pages/Home"
+
 function App() {
 
   return (
-    <div>
-      <h1>asdasd</h1>
-    </div>
+    <>
+      <Sidebar/>
+      <Home/>
+    </>
   )
 }
 
