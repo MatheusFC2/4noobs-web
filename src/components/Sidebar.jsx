@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Logo from '../public/assets/logo-sidebar.svg'; 
 import Control from '../public/assets/controle.svg';
-import { Code, DiscordLogo, Globe, House, InstagramLogo, LinuxLogo, Moon, PaintBrushBroad, Suitcase, Sun, TwitterLogo } from "phosphor-react";
+import { Code, DiscordLogo, Globe, House, InstagramLogo, LinuxLogo, Moon, PaintBrushBroad, Suitcase, Sun, TwitterLogo, Wrench } from "phosphor-react";
 import Home from "../pages/Home";
 import { useTheme } from "../hooks/useTheme";
 
@@ -36,7 +36,7 @@ function Sidebar () {
                         <Suitcase color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Framework</li>
                     </div>
                     <div className="flex flex-row items-center pt-10">
-                        <Suitcase color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Ferramentas</li>
+                        <Wrench color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Ferramentas</li>
                     </div>
                     <div className="flex flex-row items-center pt-10">
                         <LinuxLogo color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Sistema Operacionais</li>
