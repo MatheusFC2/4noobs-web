@@ -56,7 +56,9 @@ function Sidebar () {
                     
                 </div>
                 <div className="flex justify-center items-center pt-10">
-                    <h1 className="text-white font-header ">Desenvolvido por <a className="underline" href="https://omatheusfc.vercel.app/" target="_blank">omatheusfc</a></h1>
+                    {!open === false ? <h1 className="text-white font-header ">Desenvolvido por <a className="underline" href="https://omatheusfc.vercel.app/" target="_blank">omatheusfc</a></h1> 
+                    : <h1 className="text-white font-header "><a className="underline" href="https://omatheusfc.vercel.app/" target="_blank">OMFC</a></h1>}
+                
                 </div>
             </div>
             <div className="w-full">
