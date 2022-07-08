@@ -4,9 +4,10 @@ import Home from "./pages/Home"
 function App() {
 
   return (
-    <>
+    <div style={{height: '100%', display: 'flex',}}>
       <Sidebar/>
-    </>
+      <Home/>
+    </div>
   )
 }
 

@@ -11,8 +11,8 @@ function Sidebar () {
     const [open, setOpen] = useState(true);
     const { theme, setTheme } = useTheme();  
     return (
-        <div className="flex">
-            <div className={` ${open ? "w-72" : "w-20" } p-5 pt-5 duration-500 h-screen bg-gradient-to-t  from-dark-purple to-purple-4noobs relative`}>
+        <div className="flex h-full">
+            <div className={`${open ? "w-72" : "w-20" } fixed p-5 pt-5 duration-500 min-h-screen bg-gradient-to-t  from-dark-purple to-purple-4noobs  relative`}>
                 <img 
                     src={Control} 
                     className={`absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-purple-4noobs ${!open && 'rotate-180'}`}
@@ -60,9 +60,6 @@ function Sidebar () {
                     : <h1 className="text-white font-header hover:text-purple-500"><a className="underline" href="https://omatheusfc.vercel.app/" target="_blank">OMFC</a></h1>}
                 
                 </div>
-            </div>
-            <div className="w-full">
-                <Home/>
             </div>
         </div>
     );
