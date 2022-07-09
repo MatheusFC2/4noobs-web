@@ -2,7 +2,6 @@ import { useState } from "react";
 import Logo from '../public/assets/logo-sidebar.svg'; 
 import Control from '../public/assets/controle.svg';
 import { Code, DiscordLogo, Globe, House, InstagramLogo, LinuxLogo, Moon, PaintBrushBroad, Suitcase, Sun, TwitterLogo, Wrench } from "phosphor-react";
-import Home from "../pages/Home";
 import { useTheme } from "../hooks/useTheme";
 
 
@@ -13,11 +12,11 @@ function Sidebar () {
     return (
         <div className="flex h-full">
             <div className={`${open ? "w-72" : "w-20" } fixed p-5 pt-5 duration-500 min-h-screen bg-gradient-to-t  from-dark-purple to-purple-4noobs  relative`}>
-                <img 
-                    src={Control} 
-                    className={`absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-purple-4noobs ${!open && 'rotate-180'}`}
-                    onClick={() => setOpen(!open)}
-                />
+                    <img 
+                        src={Control} 
+                        className={`absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-purple-4noobs ${!open && 'rotate-180'}`}
+                        onClick={() => setOpen(!open)}
+                    />
                 <div className="flex gap-x-4 items-center">
                     <img src={Logo} className={`cursor-pointer duration-500`} />
                     <h1 className={`font-header text-white origin-left font-medium text-xl duration-300 ${!open && 'scale-0'}`}>
@@ -26,24 +25,36 @@ function Sidebar () {
                 </div>
                 <div className="h-[1px] w-25 bg-[#2E0D55] mt-7"></div>
                 <ul className="pt-6">
-                    <div className="flex flex-row items-center pt-4">
-                        <House color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Home</li>
-                    </div>
-                    <div className="flex flex-row items-center pt-10">
-                        <Code color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Linguagens de Programação</li>
-                    </div>
-                    <div className="flex flex-row items-center pt-10">
-                        <Suitcase color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Framework</li>
-                    </div>
-                    <div className="flex flex-row items-center pt-10">
-                        <Wrench color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Ferramentas</li>
-                    </div>
-                    <div className="flex flex-row items-center pt-10">
-                        <LinuxLogo color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Sistema Operacionais</li>
-                    </div>
-                    <div className="flex flex-row items-center pt-10">
-                        <PaintBrushBroad color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Design</li>
-                    </div>
+                    <a href="/">
+                        <div className="flex flex-row items-center pt-4">
+                            <House color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Home</li>
+                        </div>
+                    </a>
+                    <a href="/Linguagens-de-Programacao" className="">
+                        <div className="flex flex-row items-center pt-10">
+                            <Code color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Linguagens de Programação</li>
+                        </div>
+                    </a>
+                    <a href="/Framework">
+                        <div className="flex flex-row items-center pt-10">
+                            <Suitcase color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Framework</li>
+                        </div>
+                    </a>
+                    <a href="/Ferramentas">
+                        <div className="flex flex-row items-center pt-10">
+                            <Wrench color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Ferramentas</li>
+                        </div>
+                    </a>
+                    <a href="/Sistemas-Operacionais">
+                        <div className="flex flex-row items-center pt-10">
+                            <LinuxLogo color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Sistema Operacionais</li>
+                        </div>
+                    </a>
+                    <a href="/Design">
+                        <div className="flex flex-row items-center pt-10">
+                            <PaintBrushBroad color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0'}`}>Design</li>
+                        </div>
+                    </a>
                 </ul>
                 <div className="flex flex-row items-center justify-center pt-14">
                     <a href="https://www.instagram.com/heartdevs/" target="_blank"><InstagramLogo color="white" weight="regular" size={20} className={`mr-3 ${!open && 'scale-0 duration-100'}`} /></a>
