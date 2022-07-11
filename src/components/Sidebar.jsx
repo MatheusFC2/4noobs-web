@@ -12,11 +12,13 @@ function Sidebar () {
     return (
         <div className="flex h-full">
             <div className={`${open ? "w-72" : "w-20" } fixed p-5 pt-5 duration-500 min-h-screen bg-gradient-to-t  from-dark-purple to-purple-4noobs  relative`}>
-                    <img 
-                        src={Control} 
-                        className={`absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-purple-4noobs ${!open && 'rotate-180'}`}
-                        onClick={() => setOpen(!open)}
-                    />
+                <img 
+                    src={Control} 
+                    className={`absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-purple-4noobs ${!open && 'rotate-180'}`}
+                    href="/"
+                    onClick={() => setOpen(!open)}
+                    
+                />
                 <div className="flex gap-x-4 items-center">
                     <img src={Logo} className={`cursor-pointer duration-500`} />
                     <h1 className={`font-header text-white origin-left font-medium text-xl  ${!open && 'scale-0 duration-700'}`}>
@@ -26,34 +28,49 @@ function Sidebar () {
                 <div className="h-[1px] w-25 bg-[#2E0D55] mt-7"></div>
                 <ul className="pt-6">
                     <a href="/">
-                        <div className="flex flex-row items-center pt-4">
-                            <House color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Home</li>
+                        <div className="pt-4">
+                            <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
+                                <House color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Home</li>
+                            </div>
                         </div>
                     </a>
-                    <a href="/Linguagens-de-Programacao" className="">
-                        <div className="flex flex-row items-center pt-10">
-                            <Code color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Linguagens de Programação</li>
+                    <a href="/Linguagens-de-Programacao">
+                        <div className="pt-10">
+                            <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-16">
+                                <Code color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Linguagens de Programação</li>
+                            </div>
                         </div>
                     </a>
                     <a href="/Framework">
-                        <div className="flex flex-row items-center pt-10">
-                            <Suitcase color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Framework</li>
+                        <div className="pt-10">
+                            <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
+                                <Suitcase color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Framework</li>
+
+                            </div>
                         </div>
                     </a>
                     <a href="/Ferramentas">
-                        <div className="flex flex-row items-center pt-10">
-                            <Wrench color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Ferramentas</li>
+                        <div className="pt-10">
+                            <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
+                                <Wrench color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Ferramentas</li>
+                            </div>
                         </div>
                     </a>
                     <a href="/Sistemas-Operacionais">
-                        <div className="flex flex-row items-center pt-10">
-                            <LinuxLogo color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Sistema Operacionais</li>
+                        <div className="pt-10">
+                            <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
+                                <LinuxLogo color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Sistema Operacionais</li>
+
+                            </div>
                         </div>
                     </a>
                     <a href="/Design">
-                        <div className="flex flex-row items-center pt-10">
-                            <PaintBrushBroad color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Design</li>
+                        <div className="pt-10">
+                            <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
+                                <PaintBrushBroad color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Design</li>
+                            </div>
                         </div>
+
                     </a>
                 </ul>
                 <div className="flex flex-row items-center justify-center pt-14">
