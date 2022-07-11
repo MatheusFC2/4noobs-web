@@ -34,14 +34,14 @@ function Sidebar () {
                             </div>
                         </div>
                     </a>
-                    <a href="/Linguagens-de-Programacao">
+                    <a href="/linguagens-de-programacao">
                         <div className="pt-10">
                             <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-16">
                                 <Code color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Linguagens de Programação</li>
                             </div>
                         </div>
                     </a>
-                    <a href="/Framework">
+                    <a href="/framework">
                         <div className="pt-10">
                             <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
                                 <Suitcase color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Framework</li>
@@ -49,14 +49,14 @@ function Sidebar () {
                             </div>
                         </div>
                     </a>
-                    <a href="/Ferramentas">
+                    <a href="/ferramentas">
                         <div className="pt-10">
                             <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
                                 <Wrench color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Ferramentas</li>
                             </div>
                         </div>
                     </a>
-                    <a href="/Sistemas-Operacionais">
+                    <a href="/sistemas-operacionais">
                         <div className="pt-10">
                             <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
                                 <LinuxLogo color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Sistema Operacionais</li>
@@ -64,7 +64,7 @@ function Sidebar () {
                             </div>
                         </div>
                     </a>
-                    <a href="/Design">
+                    <a href="/design">
                         <div className="pt-10">
                             <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
                                 <PaintBrushBroad color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Design</li>
