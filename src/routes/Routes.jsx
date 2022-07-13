@@ -11,7 +11,7 @@ export function Router() {
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/linguagens-de-programacao" element={<Ldp/>} />
-            <Route path="/framework" element={<Framework/>} />
+            <Route path="/frameworks" element={<Framework/>} />
             <Route path="/ferramentas" element={<Ferramentas/>} />
             <Route path="/sistemas-operacionais" element={<So/>} />
             <Route path="/design" element={<Design/>} />
