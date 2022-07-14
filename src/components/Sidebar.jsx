@@ -41,7 +41,7 @@ function Sidebar () {
                             </div>
                         </div>
                     </a>
-                    <a href="/framework">
+                    <a href="/frameworks">
                         <div className="pt-10">
                             <div className="flex flex-row items-center hover:bg-purple-4noobs rounded-md h-10">
                                 <Suitcase color="white" weight="bold" size={29}/><li className={`text-white text-lg pl-3 ${!open && 'scale-0 duration-200'}`}>Framework</li>
