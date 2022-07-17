@@ -3,9 +3,12 @@
         "browser": true,
         "es2021": true
     },
+    "parser": "babel-eslint",
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier",
+        "prettier/react"        
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -15,9 +18,11 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
+        "prettier/prettier": "error",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "jsx-a11y/alt-text": [ 2, {
             "elements": [ "img", "object", "area", "input[type=\"image\"]" ],
