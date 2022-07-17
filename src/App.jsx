@@ -1,7 +1,5 @@
-import { BrowserRouter } from "react-router-dom"
-import Sidebar from "./components/Sidebar"
-import Home from "./pages/Home"
-import { Router } from "./routes/Routes"
+import { BrowserRouter } from "react-router-dom";
+import Router from "./routes/Routes";
 
 function App() {
 
@@ -14,4 +12,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
