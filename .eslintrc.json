@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "jsx-a11y/alt-text": [ 2, {
+            "elements": [ "img", "object", "area", "input[type=\"image\"]" ],
+            "img": ["Image"],
+            "object": ["Object"],
+            "area": ["Area"],
+            "input[type=\"image\"]": ["InputImage"]
+        }],
+    }
+}
