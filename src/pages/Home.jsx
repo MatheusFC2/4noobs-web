@@ -203,6 +203,7 @@ function Home() {
                                             <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-header">{course.name}</h5>
                                         </a>
                                         <p className="text-sm pb-2 dark:text-white">{course.category}</p>
+                                        <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800" />
                                         <p class="pt-2 mb-3 text-gray-700 dark:text-gray-200">{course.description}</p>
                                         <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button dark:hover:text-black border-2 border-purple-button rounded-lg hover:bg-purple-button hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:g-purple-button dark:hover:bg-puple-button dark:focus:bg-purple-button">
                                             Ler Mais
