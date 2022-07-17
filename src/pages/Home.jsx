@@ -56,7 +56,7 @@ function Home() {
 
                 <div class="p-6 h-full">
 
-                    <h1 class="flex font-bold text-sm justify-center items-center md:text-2xl md: md:mt-12 mb-4 dark:text-white">Linguagens de programação</h1>
+                    <h1 class="flex font-bold text-sm justify-center items-center md:text-2xl md:mt-12 mb-4 dark:text-white">Linguagens de programação</h1>
 
                     <div class="flex flex-wrap justify-evenly gap-5">
 
