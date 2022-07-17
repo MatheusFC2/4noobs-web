@@ -1,16 +1,16 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import Sidebar from "../components/Sidebar";
-import { useTheme } from "../hooks/useTheme";
-import LogoLight from '../public/assets/4noobs-logo-light.svg'
-import LogoDark from '../public/assets/4noobs-logo-dark.svg'
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import Sidebar from '../components/Sidebar';
+import { useTheme } from '../hooks/useTheme';
+import LogoLight from '../public/assets/4noobs-logo-light.svg';
+import LogoDark from '../public/assets/4noobs-logo-dark.svg'; 
 import Jslogo from '../public/assets/jslogo.png';
 
 
 export function Framework()  {
     const [courses, setCourses] = useState([]);
     const { theme } = useTheme();
-
+    
 
     useEffect(()=> {
         axios

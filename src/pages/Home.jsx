@@ -1,5 +1,5 @@
-import LogoLight from '../public/assets/4noobs-logo-light.svg'
-import LogoDark from '../public/assets/4noobs-logo-dark.svg'
+import LogoLight from '../public/assets/4noobs-logo-light.svg';
+import LogoDark from '../public/assets/4noobs-logo-dark.svg';
 import Jslogo from '../public/assets/jslogo.png';
 import Clogo from '../public/assets/clogo.png';
 import Csharplogo from '../public/assets/csharplogo.jpg';
