@@ -42,8 +42,10 @@ function Home() {
     }, [])
 
     return (
-        <div className="h-full w-full overflow-scroll">
-            <NavBar/>
+        <div className="h-full w-full bg-dark-0d overflow-scroll">
+            <div className="pb-20">
+                <NavBar/>
+            </div>
             <div className='w-full  p-10'>
                 <div className={`flex justify-center`}>
                     <img src={LogoDark} alt="" className='w-100 h-40' />
