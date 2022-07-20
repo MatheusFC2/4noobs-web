@@ -164,7 +164,7 @@ function Home() {
                         })}
                     </div>
                     <div className='flex justify-center items-center pt-20'>
-                        <a href="/frameworks" class="inline-block py-3 px-10 text-xl text-purple-button border-purple-button border-2 px-7 hover:bg-purple-button hover:text-white rounded-xl dark:hover:text-black">Ver mais Linguagens</a>
+                        <a href="/frameworks" class="inline-block py-3 px-10 text-xl text-purple-button border-purple-button border-2 px-7 hover:bg-purple-button hover:text-white rounded-xl dark:hover:text-black">Ver mais Frameworks</a>
                     </div>
                 </div>
                 <div class="p-6 h-full">
@@ -197,7 +197,7 @@ function Home() {
                     </div>
                     <div className='flex justify-center items-center pt-20'>
 
-                        <a href="/ferramentas" class="inline-block py-3 px-10 text-xl text-purple-button border-purple-button border-2 px-7 hover:bg-purple-button hover:text-white rounded-xl dark:hover:text-black">Ver mais Linguagens</a>
+                        <a href="/ferramentas" class="inline-block py-3 px-10 text-xl text-purple-button border-purple-button border-2 px-7 hover:bg-purple-button hover:text-white rounded-xl dark:hover:text-black">Ver mais Ferramentas</a>
 
                     </div>
                 </div>
@@ -231,7 +231,7 @@ function Home() {
                     </div>
                     <div className='flex justify-center items-center pt-20'>
 
-                        <a href="/sistemas-operacionais" class="inline-block py-3 px-10 text-xl text-purple-button border-purple-button border-2 px-7 hover:bg-purple-button hover:text-white rounded-xl dark:hover:text-black">Ver mais Linguagens</a>
+                        <a href="/sistemas-operacionais" class="inline-block py-3 px-10 text-xl text-purple-button border-purple-button border-2 px-7 hover:bg-purple-button hover:text-white rounded-xl dark:hover:text-black">Ver mais Sistemas Operacionais</a>
 
                     </div>
                 </div>
@@ -265,7 +265,7 @@ function Home() {
                     </div>
                     <div className='flex justify-center items-center pt-20'>
 
-                        <a href="/design" class="inline-block py-3 px-10 text-xl text-purple-button border-purple-button border-2 px-7 hover:bg-purple-button hover:text-white rounded-xl dark:hover:text-black">Ver mais Linguagens</a>
+                        <a href="/design" class="inline-block py-3 px-10 text-xl text-purple-button border-purple-button border-2 px-7 hover:bg-purple-button hover:text-white rounded-xl dark:hover:text-black">Ver mais Design</a>
 
                     </div>
                 </div>
