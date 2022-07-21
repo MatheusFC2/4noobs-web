@@ -32,7 +32,7 @@ export default function TopBar() {
                 </Disclosure.Button>
               </div>
               <div className="w-full flex justify-center sm:justify-start sm:items-start">
-                <div className="flex-shrink-0">
+                <div className="flex flex-shrink-0">
                     <img
                     className="block lg:hidden h-8 w-auto"
                     src="/src/public/assets/logo-sidebar.svg"
@@ -43,6 +43,9 @@ export default function TopBar() {
                     src="/src/public/assets/logo-sidebar.svg"
                     alt="He4rt Developers"
                     />
+                    <div>
+                        <h1 className='text-white font-header text-lg pl-5'>He4rt Developers</h1>
+                    </div>
                 </div>
                  </div>
                  <div className="justify-center items-center hidden sm:block sm:justify-center">
