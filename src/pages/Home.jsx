@@ -3,7 +3,7 @@ import BgNoobs from '../public/assets/bg-4noobs.png';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import NavBar from '../components/TopBar';
+import TopBar from '../components/TopBar';
 
 function Home() {
     const [ldp, setLdp] = useState([]);
@@ -45,10 +45,10 @@ function Home() {
     return (
         <div className="h-full w-full bg-dark-0d overflow-scroll">
             <div className="pb-20">
-                <NavBar/>
+                <TopBar/>
             </div>
             <div className='w-full  p-10'>
-                <div className={`flex justify-center`}>
+                <div className='flex justify-center'>
                     <img src={LogoDark} alt="" className='w-100 h-40' />
                 </div>
 
