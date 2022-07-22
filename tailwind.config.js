@@ -17,7 +17,7 @@ module.exports = {
         'purple-bg': '#6814CA',
         'dark-purple': '#1E0B35',
         'dark-0d': '#0D0D0D',
-        'dark-cards': '#191919',
+        'dark-cards': '#1A1A1A',
       }
     },
   },
