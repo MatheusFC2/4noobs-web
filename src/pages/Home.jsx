@@ -11,11 +11,12 @@ function Home() {
     const [design, setDesign] = useState([]);
     const [framework, setFramework] = useState([]);
     const [so, setSo] = useState([]);
+    const [bd, setBd] = useState([]); 
 
     useEffect(() => {
         axios
             .get(
-                "https://raw.githubusercontent.com/MatheusFC2/4noobs/feat/images/.github/config.json"
+                "https://raw.githubusercontent.com/MatheusFC2/4noobs/feat/new-category/.github/config.json"
             )
             .then(({ data }) => {
                 const coursesByLdp = data.courses.filter((course) => {
@@ -33,6 +34,10 @@ function Home() {
                 const coursesBySistemaOperacionais = data.courses.filter((course) => {
                     return course.category === "Sistemas operacionais"
                 })
+                const coursesByBancoDeDados = data.courses.filter((course) => {
+                    return course.category === "Banco de Dados"
+                })
+                setBd(coursesByBancoDeDados)
                 setLdp(coursesByLdp)
                 setFerramentas(coursesByFerramentas)
                 setDesign(coursesByDesign)
@@ -71,7 +76,7 @@ function Home() {
                             return (
                                 <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src={course.image} alt="" />
+                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -96,7 +101,7 @@ function Home() {
                             return (
                                 <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src={course.image} alt="" />
+                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -121,7 +126,33 @@ function Home() {
                             return (
                                 <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src={course.image} alt="" />
+                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
+                                    </a>
+                                    <div class="p-5">
+                                        <a href="#">
+                                            <h5 class="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
+                                        </a>
+                                        <p className="text-sm pb-2 text-white-f5">{course.category}</p>
+                                        <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800"></div>
+                                        <p class="pt-2 mb-3 text-white-f5">{course.description}</p>
+                                        <Link to={`/linguagens-de-programacao/${course.name}`} class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
+                                            Ler Mais
+                                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Banco de dados</h1>
+                    <div class="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
+
+                        {bd.slice(0, 4).map((course) => {
+                            return (
+                                <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
+                                    <a href="#">
+                                        {}
+                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -146,7 +177,7 @@ function Home() {
                             return (
                                 <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src={course.image} alt="" />
+                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -171,7 +202,7 @@ function Home() {
                             return (
                                 <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg" src={course.image} alt="" />
+                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
@@ -189,7 +220,6 @@ function Home() {
                             )
                         })}
                     </div>
-                    
                 </div>
             </div>
         </div>
