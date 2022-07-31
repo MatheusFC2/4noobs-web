@@ -33,7 +33,7 @@ function Cursos() {
                         </span>
                     <input 
                         class="text-white placeholder:italic placeholder:text-[#B3B3B3] block bg-dark-cards  rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:gray-500 focus:ring-1 sm:text-sm md:w-[40rem]" 
-                        placeholder="Pesquisar nome da tecnologia..." 
+                        placeholder="Pesquisar por tecnologia ou por categoria" 
                         type="text" 
                         name="search"
                         value={busca}

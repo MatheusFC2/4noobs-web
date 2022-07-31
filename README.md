@@ -18,8 +18,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Criação de Rotas
 - [x] Consumo de api do github
-- [x] Criação do Dark mode
-- [ ] Criação de Rotas dos Cards
+- [x] Criação de Rotas dos Cards
 - [ ] Imagem nos Cards
 
 ## 💻 Pré-requisitos
