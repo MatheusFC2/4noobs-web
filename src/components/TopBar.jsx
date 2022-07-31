@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import LogoTopBar from '../public/assets/logo-sidebar.svg'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -34,12 +35,12 @@ export default function TopBar() {
                 <div className="flex flex-shrink-0">
                     <img
                     className="block lg:hidden h-12 w-auto"
-                    src="../public/assets/logo-sidebar.svg"
+                    src={LogoTopBar}
                     alt="He4rt Developers"
                     />
                     <img
                     className="hidden lg:block h-12 w-auto"
-                    src="../public/assets/logo-sidebar.svg"
+                    src={LogoTopBar}
                     alt="He4rt Developers"
                     />
                     <div className="flex justify-center items-center">
