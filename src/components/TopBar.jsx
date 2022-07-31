@@ -34,12 +34,12 @@ export default function TopBar() {
                 <div className="flex flex-shrink-0">
                     <img
                     className="block lg:hidden h-12 w-auto"
-                    src="/src/public/assets/logo-sidebar.svg"
+                    src="../public/assets/logo-sidebar.svg"
                     alt="He4rt Developers"
                     />
                     <img
                     className="hidden lg:block h-12 w-auto"
-                    src="/src/public/assets/logo-sidebar.svg"
+                    src="../public/assets/logo-sidebar.svg"
                     alt="He4rt Developers"
                     />
                     <div className="flex justify-center items-center">
