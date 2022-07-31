@@ -57,62 +57,62 @@ function Home() {
                     <img src={LogoDark} alt="" className='w-100 h-40' />
                 </div>
 
-                <div class="p-6 h-full">
+                <div className="p-6 h-full">
 
-                    <h1 class="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Novidade! ⚠️</h1>
+                    <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Novidade! ⚠️</h1>
                     <div className="mt-10 z-2">
-                        <h1 class="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">4Noobs com um novo visual</h1>                
+                        <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">4Noobs com um novo visual</h1>                
 
                     </div>
                     
-                    <div class="z-1">
+                    <div className="z-1">
                         <img src={BgNoobs} alt="" />
                     </div>
                     <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Curso da comunidade para a comunidade</h1>
                     <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Linguagem de programação</h1>
-                    <div class="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
+                    <div className="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
 
                         {ldp.slice(0, 4).map((course) => {
                             return (
-                                <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
+                                <div key={course.name} className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
+                                        <img className="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
-                                    <div class="p-5">
+                                    <div className="p-5">
                                         <a href="#">
-                                            <h5 class="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
+                                            <h5 className="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
                                         </a>
                                         <p className="text-sm pb-2 text-white-f5">{course.category}</p>
                                         <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800"></div>
-                                        <p class="pt-2 mb-3 text-white-f5">{course.description}</p>
-                                        <Link to={`/linguagens-de-programacao/${course.name}`} class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
+                                        <p className="pt-2 mb-3 text-white-f5">{course.description}</p>
+                                        <a href={course.url} target="_blank" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
                                             Ler Mais
-                                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                        </Link>
+                                            <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                                        </a>
                                     </div>
                                 </div>
                             )
                         })}
                     </div>
                     <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Frameworks</h1>
-                    <div class="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
+                    <div className="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
 
                         {framework.slice(0, 4).map((course) => {
                             return (
-                                <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
+                                <div key={course.name} className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
+                                        <img className="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
-                                    <div class="p-5">
+                                    <div className="p-5">
                                         <a href="#">
-                                            <h5 class="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
+                                            <h5 className="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
                                         </a>
                                         <p className="text-sm pb-2 text-white-f5">{course.category}</p>
                                         <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800"></div>
-                                        <p class="pt-2 mb-3 text-white-f5">{course.description}</p>
-                                        <Link to={`/linguagens-de-programacao/${course.name}`} class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
+                                        <p className="pt-2 mb-3 text-white-f5">{course.description}</p>
+                                        <Link to={`/linguagens-de-programacao/${course.name}`} className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
                                             Ler Mais
-                                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                            <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                         </Link>
                                     </div>
                                 </div>
@@ -120,24 +120,24 @@ function Home() {
                         })}
                     </div>
                     <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Ferramentas</h1>
-                    <div class="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
+                    <div className="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
 
                         {ferramentas.slice(0, 4).map((course) => {
                             return (
-                                <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
+                                <div key={course.name} className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
+                                        <img className="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
-                                    <div class="p-5">
+                                    <div className="p-5">
                                         <a href="#">
-                                            <h5 class="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
+                                            <h5 className="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
                                         </a>
                                         <p className="text-sm pb-2 text-white-f5">{course.category}</p>
                                         <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800"></div>
-                                        <p class="pt-2 mb-3 text-white-f5">{course.description}</p>
-                                        <Link to={`/linguagens-de-programacao/${course.name}`} class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
+                                        <p className="pt-2 mb-3 text-white-f5">{course.description}</p>
+                                        <Link to={`/linguagens-de-programacao/${course.name}`} className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
                                             Ler Mais
-                                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                            <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                         </Link>
                                     </div>
                                 </div>
@@ -145,25 +145,25 @@ function Home() {
                         })}
                     </div>
                     <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Banco de dados</h1>
-                    <div class="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
+                    <div className="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
 
                         {bd.slice(0, 4).map((course) => {
                             return (
-                                <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
+                                <div key={course.name} className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
                                         {}
-                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
+                                        <img className="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
-                                    <div class="p-5">
+                                    <div className="p-5">
                                         <a href="#">
-                                            <h5 class="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
+                                            <h5 className="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
                                         </a>
                                         <p className="text-sm pb-2 text-white-f5">{course.category}</p>
                                         <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800"></div>
-                                        <p class="pt-2 mb-3 text-white-f5">{course.description}</p>
-                                        <Link to={`/linguagens-de-programacao/${course.name}`} class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
+                                        <p className="pt-2 mb-3 text-white-f5">{course.description}</p>
+                                        <Link to={`/linguagens-de-programacao/${course.name}`} className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
                                             Ler Mais
-                                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                            <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                         </Link>
                                     </div>
                                 </div>
@@ -171,24 +171,24 @@ function Home() {
                         })}
                     </div>
                     <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Sistemas Operacionais</h1>
-                    <div class="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
+                    <div className="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
 
                         {so.slice(0, 4).map((course) => {
                             return (
-                                <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
+                                <div key={course.name} className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
+                                        <img className="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
-                                    <div class="p-5">
+                                    <div className="p-5">
                                         <a href="#">
-                                            <h5 class="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
+                                            <h5 className="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
                                         </a>
                                         <p className="text-sm pb-2 text-white-f5">{course.category}</p>
                                         <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800"></div>
-                                        <p class="pt-2 mb-3 text-white-f5">{course.description}</p>
-                                        <Link to={`/linguagens-de-programacao/${course.name}`} class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
+                                        <p className="pt-2 mb-3 text-white-f5">{course.description}</p>
+                                        <Link to={`/linguagens-de-programacao/${course.name}`} className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
                                             Ler Mais
-                                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                            <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                         </Link>
                                     </div>
                                 </div>
@@ -196,24 +196,24 @@ function Home() {
                         })}
                     </div>
                     <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4">Design</h1>
-                    <div class="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
+                    <div className="flex flex-wrap justify-evenly gap-x-5 gap-y-8">
 
                         {design.slice(0, 4).map((course) => {
                             return (
-                                <div class="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
+                                <div key={course.name} className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] ">
                                     <a href="#">
-                                        <img class="rounded-t-lg h-44 w-full" src={course.image} alt="" />
+                                        <img className="rounded-t-lg h-44 w-full" src={course.image} alt="" />
                                     </a>
-                                    <div class="p-5">
+                                    <div className="p-5">
                                         <a href="#">
-                                            <h5 class="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
+                                            <h5 className="text-2xl font-bold tracking-tight text-white font-header">{course.name}</h5>
                                         </a>
                                         <p className="text-sm pb-2 text-white-f5">{course.category}</p>
                                         <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800"></div>
-                                        <p class="pt-2 mb-3 text-white-f5">{course.description}</p>
-                                        <Link to={`/linguagens-de-programacao/${course.name}`} class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
+                                        <p className="pt-2 mb-3 text-white-f5">{course.description}</p>
+                                        <Link to={`/linguagens-de-programacao/${course.name}`} className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-purple-button border-2 border-purple-bg rounded-lg hover:bg-purple-button text-purple-bg focus:ring-4 focus:outline-none focus:ring-blue-300 hover:bg-purple-bg hover:text-white">
                                             Ler Mais
-                                            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                            <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                         </Link>
                                     </div>
                                 </div>
