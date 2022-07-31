@@ -5,9 +5,7 @@ function App() {
 
   return (
     <div style={{height: '100%', display: 'flex',}}>
-      <BrowserRouter>
         <Router />
-      </BrowserRouter>
     </div>
   )
 }
