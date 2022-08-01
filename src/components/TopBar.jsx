@@ -6,7 +6,7 @@ import LogoTopBar from '../public/assets/logo-sidebar.svg'
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Cursos', href: '/cursos', current: false },
-  { name: 'Contribuidores', href: '/contribuidores', current: false },
+  { name: '', href: '/', current: false },
 ]
 
 function classNames(...classes) {
