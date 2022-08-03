@@ -84,7 +84,7 @@ function Home() {
                                     key={course.name}
                                     className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] "
                                 >
-                                    <a href="#">
+                                    <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
                                             src={course.image}
@@ -92,7 +92,7 @@ function Home() {
                                         />
                                     </a>
                                     <div className="p-5">
-                                        <a href="#">
+                                        <a href={course.url}>
                                             <h5 className="text-2xl font-bold tracking-tight text-white font-header">
                                                 {course.name}
                                             </h5>
@@ -140,7 +140,7 @@ function Home() {
                                     key={course.name}
                                     className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] "
                                 >
-                                    <a href="#">
+                                    <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
                                             src={course.image}
@@ -148,7 +148,7 @@ function Home() {
                                         />
                                     </a>
                                     <div className="p-5">
-                                        <a href="#">
+                                        <a href={course.url}>
                                             <h5 className="text-2xl font-bold tracking-tight text-white font-header">
                                                 {course.name}
                                             </h5>
@@ -196,7 +196,7 @@ function Home() {
                                     key={course.name}
                                     className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] "
                                 >
-                                    <a href="#">
+                                    <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
                                             src={course.image}
@@ -204,7 +204,7 @@ function Home() {
                                         />
                                     </a>
                                     <div className="p-5">
-                                        <a href="#">
+                                        <a href={course.url}>
                                             <h5 className="text-2xl font-bold tracking-tight text-white font-header">
                                                 {course.name}
                                             </h5>
@@ -252,8 +252,7 @@ function Home() {
                                     key={course.name}
                                     className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] "
                                 >
-                                    <a href="#">
-                                        {}
+                                    <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
                                             src={course.image}
@@ -261,7 +260,7 @@ function Home() {
                                         />
                                     </a>
                                     <div className="p-5">
-                                        <a href="#">
+                                        <a href={course.url}>
                                             <h5 className="text-2xl font-bold tracking-tight text-white font-header">
                                                 {course.name}
                                             </h5>
@@ -309,7 +308,7 @@ function Home() {
                                     key={course.name}
                                     className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] "
                                 >
-                                    <a href="#">
+                                    <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
                                             src={course.image}
@@ -317,7 +316,7 @@ function Home() {
                                         />
                                     </a>
                                     <div className="p-5">
-                                        <a href="#">
+                                        <a href={course.url}>
                                             <h5 className="text-2xl font-bold tracking-tight text-white font-header">
                                                 {course.name}
                                             </h5>
@@ -365,7 +364,7 @@ function Home() {
                                     key={course.name}
                                     className="max-w-xs bg-dark-cards rounded-lg drop-shadow-[0_5px_3px_rgba(0,0,0,0.30)] "
                                 >
-                                    <a href="#">
+                                    <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
                                             src={course.image}
@@ -373,7 +372,7 @@ function Home() {
                                         />
                                     </a>
                                     <div className="p-5">
-                                        <a href="#">
+                                        <a href={course.url}>
                                             <h5 className="text-2xl font-bold tracking-tight text-white font-header">
                                                 {course.name}
                                             </h5>
