@@ -1,4 +1,4 @@
-# 4Noobs
+# 4Noobs-Web
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
@@ -16,10 +16,11 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Criação de Rotas
-- [x] Consumo de api do github
-- [x] Criação de Rotas dos Cards
-- [ ] Imagem nos Cards
+- [x] Criação de Rotas.
+- [x] Consumo de api do github.
+- [x] Criação de Rotas dos Cards.
+- [ ] Adicionar uma imagem default para as tecnologias que não tiver uma image específica.
+- [ ] Filtrar cursos por tags.
 
 ## 💻 Pré-requisitos
 
