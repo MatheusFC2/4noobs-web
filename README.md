@@ -44,6 +44,10 @@ Para usar 4Noobs-web, siga estas etapas:
 ```
 npm install && yarn
 ```
+E depois execute
+```
+yarn run dev || npm run dev
+```
 
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
