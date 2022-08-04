@@ -1,5 +1,6 @@
 import LogoDark from '../public/assets/4noobs-logo-dark.svg';
 import BgNoobs from '../public/assets/bg-4noobs.png';
+import BgCard from '../public/assets/imgcard.svg'; 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -16,7 +17,7 @@ function Home() {
     useEffect(() => {
         axios
             .get(
-                'https://raw.githubusercontent.com/MatheusFC2/4noobs/feat/new-category/.github/config.json',
+                'https://raw.githubusercontent.com/MatheusFC2/4noobs/feat/empty-data/.github/config.json',
             )
             .then(({ data }) => {
                 const coursesByLdp = data.courses.filter((course) => {
@@ -87,7 +88,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
+                                            src={course.image ? course.image : BgCard }
                                             alt=""
                                         />
                                     </a>
@@ -157,7 +158,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
+                                            src={course.image ? course.image :  BgCard}
                                             alt=""
                                         />
                                     </a>
@@ -227,7 +228,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
+                                            src={course.image ? course.image :  BgCard}
                                             alt=""
                                         />
                                     </a>
@@ -297,7 +298,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
+                                            src={course.image ? course.image :  BgCard}
                                             alt=""
                                         />
                                     </a>
@@ -367,7 +368,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
+                                            src={course.image ? course.image :  BgCard}
                                             alt=""
                                         />
                                     </a>
@@ -437,7 +438,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
+                                            src={course.image ? course.image :  BgCard}
                                             alt=""
                                         />
                                     </a>

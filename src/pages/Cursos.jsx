@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BgCard from '../public/assets/imgcard.svg' 
 import axios from 'axios';
 import { SearchIcon } from '@heroicons/react/outline';
 import TopBar from '../components/TopBar';
@@ -72,7 +73,7 @@ function Cursos() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
+                                            src={course.image ? course.image :  BgCard}
                                             alt=""
                                         />
                                     </a>
