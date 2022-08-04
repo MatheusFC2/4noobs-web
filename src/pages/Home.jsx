@@ -87,7 +87,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image}
+                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
                                             alt=""
                                         />
                                     </a>
@@ -143,7 +143,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image}
+                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
                                             alt=""
                                         />
                                     </a>
@@ -199,7 +199,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image}
+                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
                                             alt=""
                                         />
                                     </a>
@@ -255,7 +255,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image}
+                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
                                             alt=""
                                         />
                                     </a>
@@ -311,7 +311,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image}
+                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
                                             alt=""
                                         />
                                     </a>
@@ -367,7 +367,7 @@ function Home() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image}
+                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
                                             alt=""
                                         />
                                     </a>
@@ -379,6 +379,20 @@ function Home() {
                                         </a>
                                         <p className="text-sm pb-2 text-white-f5">
                                             {course.category}
+                                        </p>
+                                        <p className="text-sm mb-2 text-white-f5">
+                                            Autor:{' '}
+                                            <a
+                                                target="_blank"
+                                                href={course.author.avatar_url.replace(
+                                                    '.png',
+                                                    '',
+                                                )}
+                                            >
+                                                <span className="hover:text-purple-500 text-white-500">
+                                                    {course.author.name}
+                                                </span>
+                                            </a>
                                         </p>
                                         <div className="h-[2px] w-60 bg-slate-300 rounded-lg justify-center items-center dark:bg-zinc-800"></div>
                                         <p className="pt-2 mb-3 text-white-f5">

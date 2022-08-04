@@ -72,7 +72,7 @@ function Cursos() {
                                     <a href={course.url}>
                                         <img
                                             className="rounded-t-lg h-44 w-full"
-                                            src={course.image}
+                                            src={course.image ? course.image : '/src/public/assets/imgcard.svg' }
                                             alt=""
                                         />
                                     </a>
