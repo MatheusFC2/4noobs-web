@@ -74,7 +74,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/MatheusFC2.png" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://github.com/MatheusFC2.png" width="100px;" alt="Foto do omatheusfc no GitHub"/><br>
         <sub>
           <b>oMatheusFC</b>
         </sub>
@@ -82,9 +82,17 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/henri1i.png" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://github.com/henri1i.png" width="100px;" alt="Foto do henri1i no GitHub"/><br>
         <sub>
           <b>henri1i</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/dandankara.png" width="100px;" alt="Foto do dandankara no GitHub"/><br>
+        <sub>
+          <b>dandankara</b>
         </sub>
       </a>
     </td>
