@@ -20,7 +20,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Consumo de api do github.
 - [x] Criação de Rotas dos Cards.
 - [x] Adicionar uma imagem default para as tecnologias que não tiver uma image específica.
-- [ ] Filtrar cursos por tags.
+- [x] Filtrar cursos por tags.
 
 ## 💻 Pré-requisitos
 
