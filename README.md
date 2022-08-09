@@ -80,10 +80,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
-  </tr>
-
-
-  <tr>
     <td align="center">
       <a href="#">
         <img src="https://github.com/henri1i.png" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
