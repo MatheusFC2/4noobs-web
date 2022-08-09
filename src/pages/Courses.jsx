@@ -1,29 +1,52 @@
 import React, { useState, useEffect } from 'react';
-import BgCard from '../public/assets/imgcard.svg' 
+import BgCard from '../public/assets/imgcard.svg'
 import axios from 'axios';
 import { SearchIcon } from '@heroicons/react/outline';
 import TopBar from '../components/TopBar';
-import { Link } from 'react-router-dom';
 
-function Cursos() {
-    const [loading, setLoading] = useState(false);
+export default function Courses() {
     const [courses, setCourses] = useState([]);
-    const [busca, setBusca] = useState('');
+    const [results, setResults] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [search, setSearch] = useState('');
+
+    function getResults() {
+        if(search == '') {
+            return courses
+        }
+
+        return courses.filter((course) => {
+            return (
+                course.category
+                    .toLowerCase()
+                    .includes(search.toLowerCase()) ||
+                course.name
+                    .toLowerCase()
+                    .includes(search.toLowerCase()) ||
+                course.tags
+                    ?.map((tag) => tag.toLocaleUpperCase().includes(search.toLocaleUpperCase()))
+                    .includes(true)
+            )
+        })
+    }
+
+    async function fetchCourses() {
+        const response = await axios.get(import.meta.env.VITE_COURSES_URL);
+
+        setCourses(response.data.courses);
+        setResults(response.data.courses);
+    }
 
     useEffect(() => {
-        const loadPosts = async () => {
-            setLoading(true);
-            const response = await axios.get(
-                'https://raw.githubusercontent.com/MatheusFC2/4noobs/feat/new-category/.github/config.json',
-            );
-            setCourses(response.data.courses);
-            setLoading(false);
-        };
+        setResults(getResults);
+    }, [search]);
 
-        loadPosts();
+    useEffect(() => {
+        setLoading(true);
+        fetchCourses();
+        setLoading(false);
     }, []);
 
-    console.log(courses);
     return (
         <div className="h-full w-full bg-dark-0d overflow-scroll">
             <div className="pb-36">
@@ -40,8 +63,8 @@ function Cursos() {
                         placeholder="Pesquisar por tecnologia ou por categoria"
                         type="text"
                         name="search"
-                        value={busca}
-                        onChange={(e) => setBusca(e.target.value)}
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
                     />
                 </label>
             </div>
@@ -49,22 +72,7 @@ function Cursos() {
                 {loading ? (
                     <h4>Carregando...</h4>
                 ) : (
-                    courses
-                        .filter((value) => {
-                            if (busca === '') {
-                                return value;
-                            }
-                            console.log(value);
-                            return (
-                                value.category
-                                    .toLowerCase()
-                                    .includes(busca.toLowerCase()) ||
-                                value.name
-                                    .toLowerCase()
-                                    .includes(busca.toLowerCase())
-                            );
-                        })
-                        .map((course) => {
+                    results.map((course) => {
                             return (
                                 <div
                                     key={course.name}
@@ -134,5 +142,3 @@ function Cursos() {
         </div>
     );
 }
-
-export default Cursos;

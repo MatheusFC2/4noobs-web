@@ -20,7 +20,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Consumo de api do github.
 - [x] Criação de Rotas dos Cards.
 - [x] Adicionar uma imagem default para as tecnologias que não tiver uma image específica.
-- [ ] Filtrar cursos por tags.
+- [x] Filtrar cursos por tags.
 
 ## 💻 Pré-requisitos
 
@@ -49,7 +49,10 @@ E depois execute
 yarn run dev || npm run dev
 ```
 
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
+Copie as variaveis de ambiente
+```
+cp .env.example .env
+```
 
 ## 📫 Contribuindo para 4Noobs-web
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
@@ -77,9 +80,16 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/henri1i.png" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <sub>
+          <b>henri1i</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
-
 
 ## 😄 Seja um dos contribuidores<br>
 
