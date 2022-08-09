@@ -81,10 +81,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
   </tr>
-</table>
 
 
-<table>
   <tr>
     <td align="center">
       <a href="#">
