@@ -84,6 +84,19 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 </table>
 
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/henri1i.png" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <sub>
+          <b>henri1i</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## 😄 Seja um dos contribuidores<br>
 
 Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
