@@ -50,19 +50,25 @@ export default function TopBar() {
                  </div>
                  <div className="justify-center items-center hidden sm:block sm:justify-center">
                   <div className="justify-center items-center flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-purple-hover text-white' : 'text-gray-300 hover:bg-purple-hover hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium justify-center items-center'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+                    {navigation.map((item) => {
+                        if (item.name === "") {
+                          return null;
+                        }
+                        return (
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            className={classNames(
+                              item.current ? 'bg-purple-hover text-white' : 'text-gray-300 hover:bg-purple-hover hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium justify-center items-center'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </a>
+                        )
+                      })
+                    }
                   </div>
                 </div>
             </div>
