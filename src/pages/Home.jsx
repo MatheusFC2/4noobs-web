@@ -17,7 +17,7 @@ function Home() {
     useEffect(() => {
         axios
             .get(
-                'https://raw.githubusercontent.com/MatheusFC2/4noobs/feat/new-category/.github/config.json',
+                'https://raw.githubusercontent.com/he4rt/4noobs/master/.github/config.json',
             )
             .then(({ data }) => {
                 const coursesByLdp = data.courses.filter((course) => {

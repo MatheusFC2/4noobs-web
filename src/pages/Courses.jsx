@@ -26,7 +26,7 @@ export default function Courses() {
                 course.tags
                     ?.map((tag) => tag.toLocaleUpperCase().includes(search.toLocaleUpperCase()))
                     .includes(true)
-            )
+            )   
         })
     }
 
