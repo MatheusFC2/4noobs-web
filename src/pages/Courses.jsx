@@ -28,6 +28,7 @@ export default function Courses() {
                     .includes(true)
             )   
         })
+        
     }
 
     async function fetchCourses() {
