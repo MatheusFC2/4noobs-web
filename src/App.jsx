@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 import Router from "./routes/Routes";
 
 function App() {
@@ -9,5 +8,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App;
