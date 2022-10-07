@@ -4,9 +4,9 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import LogoTopBar from '../public/assets/logo-sidebar.svg'
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/', current: false },
   { name: 'Cursos', href: '/cursos', current: false },
-  { name: '', href: '/', current: false },
+  { name: 'Crie você mesmo', href: '/contribuicao', current: false },
 ]
 
 function classNames(...classes) {
@@ -49,7 +49,7 @@ export default function TopBar() {
                 </div>
                  </div>
                  <div className="justify-center items-center hidden sm:block sm:justify-center">
-                  <div className="justify-center items-center flex space-x-4">
+                  <div className="justify-center items-center flex space-x-4 w-max">
                     {navigation.map((item) => {
                         if (item.name === "") {
                           return null;
