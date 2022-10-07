@@ -10,7 +10,7 @@ function Contribution() {
             </div>
             <div className="p-6">
                     <h1 className="flex font-bold text-white text-sm justify-center items-center md:text-2xl md:mt-12 mb-4 text-center pb-5">    
-                        Ficamos felizes em saber que você tem  <br/> interese em contribuir com o projeto
+                        Ficamos felizes em saber que você tem  <br/> interesse em contribuir com o projeto
                     </h1>
                     <p className="flex font-bold text-white-f5 text-sm justify-center items-center md:text-lg md:mt-12 mb-4 text-center pb-5">    
                         Aqui esta um exemplo de repositório, onde você pode ter como base para fazer o seu 4noobs
@@ -28,7 +28,7 @@ function Contribution() {
                         </a>
                         <div className="p-5">
                             <a href="https://github.com/he4rt/4noobs/tree/master/examples">
-                                <h5 className="text-2xl font-bold tracking-tight text-white font-header">
+                                <h5 className="tracking-wider text-2xl font-bold tracking-tight text-white font-header">
                                     Repositorio Guia
                                 </h5>
                             </a>
