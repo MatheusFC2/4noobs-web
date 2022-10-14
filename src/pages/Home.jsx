@@ -3,7 +3,6 @@ import BgNoobs from '../public/assets/bg-4noobs.png';
 import BgCard from '../public/assets/imgcard.svg'; 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import TopBar from '../components/TopBar';
 
 function Home() {
