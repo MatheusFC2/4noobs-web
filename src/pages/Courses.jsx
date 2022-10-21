@@ -49,7 +49,7 @@ export default function Courses() {
     }, []);
 
     return (
-        <div className="h-full w-full bg-dark-0d overflow-scroll">
+        <div className="h-full w-full bg-dark-0d overflow-scroll overflow-x-hidden">
             <div className="pb-36">
                 <TopBar />
             </div>

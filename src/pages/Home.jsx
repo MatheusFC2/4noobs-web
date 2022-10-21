@@ -49,7 +49,7 @@ function Home() {
     }, []);
 
     return (
-        <div className="h-full w-full bg-dark-0d overflow-scroll">
+        <div className="h-full w-full bg-dark-0d overflow-scroll overflow-x-hidden">
             <div className="pb-20">
                 <TopBar />
             </div>
